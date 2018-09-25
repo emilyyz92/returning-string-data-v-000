@@ -1,3 +1,11 @@
+<%= form_tag('/', method: 'post') do %>
+  <%= label_tag(:title) %>
+  <%= text_field_tag(:title) %>
+  <%= label_tag(:description) %>
+  <%= text_field_tag(:description) %>
+  <%= submit_tag %>
+<% end %>
+
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
