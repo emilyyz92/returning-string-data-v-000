@@ -28,6 +28,7 @@ class PostsController < ApplicationController
 
   def body
     set_post
+    render plain: @post.description
 
 private
   # Use callbacks to share common setup or constraints between actions.
